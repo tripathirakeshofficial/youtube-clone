@@ -37,6 +37,7 @@ const VideoCard = ({
             {snippet?.title
               .replace(/&quot;/g, '"')
               .replace(/&#39;/g, "'")
+              .replace(/&amp;/g, "&")
               .slice(0, 60) || demoVideoTitle.slice(0, 60)}
           </Typography>
         </Link>

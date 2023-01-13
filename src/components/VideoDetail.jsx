@@ -40,7 +40,10 @@ const VideoDetail = () => {
               controls
             />
             <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
-              {title.replace(/&quot;/g, '"').replace(/&#39;/g, "'")}
+              {title
+                .replace(/&quot;/g, '"')
+                .replace(/&#39;/g, "'")
+                .replace(/&amp;/g, "&")}
             </Typography>
             <Stack
               direction="row"
