@@ -35,7 +35,7 @@ const ChannelDetail = () => {
       </Box>
       <Box display="flex" p="20px">
         <Box sx={{ mr: { sm: "100px" } }} />
-        <Videos videos={videos} />
+        <Videos videos={videos} profilePage />
       </Box>
     </Box>
   );
